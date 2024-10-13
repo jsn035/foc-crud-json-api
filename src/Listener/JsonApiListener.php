@@ -46,7 +46,7 @@ class JsonApiListener extends ApiListener
      *
      * @var array
      */
-    protected $_defaultConfig = [
+    protected array $_defaultConfig = [
         'detectors' => [
             'jsonapi' => ['ext' => false, 'accept' => [self::MIME_TYPE]],
         ],
