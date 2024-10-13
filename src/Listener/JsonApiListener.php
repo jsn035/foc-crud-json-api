@@ -1050,7 +1050,7 @@ class JsonApiListener extends ApiListener
             return $subject->entities;
         }
 
-        return $subject->entity;
+        return $subject->entity ?? null;
     }
 
     /**
@@ -1078,7 +1078,7 @@ class JsonApiListener extends ApiListener
             return $subject->entities->first();
         }
 
-        return $subject->entity;
+        return $subject->entity ?? null;
     }
 
     /**
