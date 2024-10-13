@@ -881,7 +881,7 @@ class JsonApiListener extends ApiListener
      */
     protected function _renderWithResources(Subject $subject): Response
     {
-        $repository = $this->_controller()->loadModel(); // Default model class
+        $repository = $this->_controller()->fetchTable(); // Default model class
 
         $usedAssociations = [];
         if (isset($subject->query)) {
